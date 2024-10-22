@@ -103,9 +103,9 @@
 | Redirect | from-to-www-redirect | Low | location |
 | Redirect | permanent-redirect | Medium | location |
 | Redirect | permanent-redirect-code | Low | location |
+| Redirect | relative-redirects | Low | location |
 | Redirect | temporal-redirect | Medium | location |
 | Redirect | temporal-redirect-code | Low | location |
-| RelativeRedirects | relative-redirects | Low | location |
 | Rewrite | app-root | Medium | location |
 | Rewrite | force-ssl-redirect | Medium | location |
 | Rewrite | preserve-trailing-slash | Medium | location |
