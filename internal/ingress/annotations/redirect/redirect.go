@@ -119,7 +119,7 @@ func (r redirect) Parse(ing *networking.Ingress) (interface{}, error) {
 
 	rr, err := parser.GetBoolAnnotation(relativeRedirectsAnnotation, ing, r.annotationConfig.Annotations)
 	if err != nil && !errors.IsMissingAnnotations(err) {
-		return false, err // default is false
+		return nil, err
 	}
 
 	tr, err := parser.GetStringAnnotation(temporalRedirectAnnotation, ing, r.annotationConfig.Annotations)
